@@ -18,8 +18,8 @@ email: gab.zer.nas@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Gabriel Zerbine and welcome to my notebook where I write things
   I'm learning.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: https://gabzer.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Gabriel_Zerbine
 github_username:  Gabzer
 
