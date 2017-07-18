@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
 gabzer:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Gabriel Zerbine
+  email:             gab.zer.nas@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -16,11 +16,11 @@ gabzer:
 
   # This photo will be used in the about section
   picture:
-    src:             https://placehold.it/128x128
+    src:             /gabzer/GAb.JPG
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+      1x:            /gabzer/GAb.JPG
+      2x:            /gabzer/GAb.JPG
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
@@ -44,7 +44,7 @@ gabzer:
     # deviantart:      <username>
     # ello:            <username>
     # twitch:          <username>
-    steam:           gabzer87
+    # steam:           gabzer87
     # reddit:          <username>
     # tumblr:          <username>
     # pinterest:       <username>
