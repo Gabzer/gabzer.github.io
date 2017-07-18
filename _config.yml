@@ -2,29 +2,29 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Hydejack
+title:               Welcome to Gabriel's blog!
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://qwtel.com
+url:                 https://gabzer.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /hydejack
+baseurl:             /gabzer
 
 # A very short description of your page
-tagline:             A pretentious two-column Jekyll theme.
+tagline:             Gabzer's blog
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Open `_config.yml` to edit this text.
+  Hi, I'm Gabriel Zerbine and welcome to my notebook where I write things
+    I'm learning.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Gabriel Zerbine
+  email:            gab.zer.nas@gmail.com
 
 # Fallback image and color
 image:               /hydejack/assets/img/nap.jpg
@@ -45,7 +45,7 @@ google_fonts:        Roboto+Slab:700|Noto+Serif:400,400i,700,700i
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:    <UA-XXXXXXXX-X>
+google_analytics:    UA-102778130-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus_shortname:    <username>
