@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34005208-5a36-4461-8747-ef3251103862" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_featured_tags/blog.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_resume.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_resume.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/_resume.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2300">
               <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -53,7 +62,13 @@
       <find>Hydejack is a cutting-e</find>
       <find>Hydejack is a cutting-ed</find>
       <find>Hydejack is a cutting-edge</find>
+      <find>f</find>
+      <find>favicon</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/_layouts</dir>
+      <dir>$PROJECT_DIR$/</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,11 +85,11 @@
         <option value="$PROJECT_DIR$/browserconfig.xml" />
         <option value="$PROJECT_DIR$/_featured_tags/hyde.md" />
         <option value="$PROJECT_DIR$/_featured_tags/hydejack.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_data/authors.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_posts/2017-07-18-Hydejack.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -119,6 +134,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gabzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gabzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -132,6 +161,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -547,12 +581,12 @@
       <workItem from="1500321672465" duration="1260000" />
       <workItem from="1500323050182" duration="2607000" />
       <workItem from="1500376136175" duration="588000" />
-      <workItem from="1500376878284" duration="9312000" />
+      <workItem from="1500376878284" duration="9961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13767000" />
+    <option name="totallyTimeSpent" value="14416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1297" height="780" extended-state="6" />
@@ -780,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/authors.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -879,6 +905,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2300">
           <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding />
         </state>
       </provider>
