@@ -16,11 +16,11 @@ gabzer:
 
   # This photo will be used in the about section
   picture:
-    src:             /gabzer/assets/img/GAb.JPG
+    src:            /assets/img/GAb.JPG
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /gabzer/assets/img/GAb.JPG
-      2x:            /gabzer/assets/img/GAb.JPG
+      1x:            /assets/img/GAb.JPG
+      2x:            /assets/img/GAb.JPG
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

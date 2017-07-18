@@ -27,7 +27,7 @@ author:
   email:            gab.zer.nas@gmail.com
 
 # Fallback image and color
-image:               /gabzer/assets/img/terminator.jpg
+image:               /assets/img/terminator.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
