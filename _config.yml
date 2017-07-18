@@ -10,7 +10,7 @@ url:                 https://gabzer.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /gabzer
+baseurl:             ''
 
 # A very short description of your page
 tagline:             Gabzer's blog
@@ -27,7 +27,7 @@ author:
   email:            gab.zer.nas@gmail.com
 
 # Fallback image and color
-image:               /gabzer/terminator.jpg   #/hydejack/assets/img/nap.jpg
+image:               /gabzer/assets/img/terminator.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
