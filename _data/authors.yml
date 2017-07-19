@@ -11,8 +11,6 @@ gabzer:
     I am a Full Stack programer with website development experience.
     I realized that life does not stop and that I have to keep perfecting myself more and more.
 
-    Open `_data/authors.yml` to edit this text.
-
   # This photo will be used in the about section
   picture:
     src:            /assets/img/GAb.JPG
