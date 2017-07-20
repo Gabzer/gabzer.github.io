@@ -18,7 +18,7 @@ tagline:            My blog
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Hi, I'm Gabriel Zerbine and welcome to my notebook where I write things
+  Hi, I'm Gabriel Zerbine and welcome to my blog where I write things
     I'm learning.
 
 # This should be the same author as first entry in `_data/authors.yml`
