@@ -1,0 +1,11 @@
+{% assign project = include.project %}
+{% assign format = include.format | default:"%d %b %Y" %}
+
+<li class="h4">
+    <a href="{{ project.url | relative_url }}" data-flip="title">
+        <span>{{ project.title }}</span>
+    </a>
+    <small><time datetime="{{ project.date | date_to_xmlschema }}">
+        {{ project.date | date:format }}
+    </time></small>
+</li>

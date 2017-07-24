@@ -1,0 +1,23 @@
+---
+layout: project
+comments: true
+title: My CV
+date: 24 Jul 2017
+screenshot:
+  src: /gabzer/assets/img/meu_site.png
+  srcset:
+    1920w: /gabzer/assets/img/meu_site.png
+    960w: /gabzer/assets/img/meu_site.png
+    480w: /gabzer/assets/img/meu_site.png
+caption: My CV.
+description: >
+  [This is my CV](https://gabrielzerbine.com.br) which was made with Angular 2.
+links:
+  -
+    title: Demo
+    url: http://gabrielzerbine.com.br
+  -
+    title: Source
+    url: https://github.com/Gabzer/MeuCurriculum
+author: gabzer
+---
