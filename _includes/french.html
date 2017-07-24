@@ -1,0 +1,31 @@
+{% assign french = include.french %}
+
+<article id="french-{{ french.id | slice: 1,9999 }}" class="french{% if include.link_title %} mb6{% endif %}" role="article">
+    <header>
+        <h1 class="post-title">
+            {% if include.link_title %}<a href="{{ french.url | relative_url }}" data-flip="title">{% endif %}
+            {{ french.title }}
+            {% if include.link_title %}</a>{% endif %}
+        </h1>
+
+        <p class="post-date heading">
+            <time datetime="{{ french.date | date_to_xmlschema }}">{{ french.date | date: "%d %b %Y" }}</time>
+            {% include tag-list.html tags=french.categories meta=site.featured_categories start_with="in " separator=" / " %}
+            {% include tag-list.html tags=french.tags meta=site.featured_tags start_with="on " separator=", " %}
+        </p>
+
+        {% include message.html text=french.description %}
+    </header>
+
+    {% unless include.excerpt %}
+    {{ french.content }}
+    {% else %}
+    {{ french.excerpt }}
+    <p class="read-more">Continue reading <a class="heading" href="{{ french.url | relative_url }}" data-flip="title">{{ french.title }}</a></p>
+    {% endunless %}
+
+</article>
+
+{% unless include.link_title %}
+<hr class="dingbat" />
+{% endunless %}

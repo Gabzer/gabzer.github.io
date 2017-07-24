@@ -92,6 +92,9 @@ collections:
   projects:
     permalink:       /projects/
     output:          true
+  french:
+    permalink:       /french/
+    output:          true
 
 # -----------------------------------------------------------------------------
 #  Advanced configuration

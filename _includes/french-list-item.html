@@ -1,0 +1,11 @@
+{% assign french = include.french %}
+{% assign format = include.format | default:"%d %b %Y" %}
+
+<li class="h4">
+    <a href="{{ french.url | relative_url }}" data-flip="title">
+        <span>{{ french.title }}</span>
+    </a>
+    <small><time datetime="{{ french.date | date_to_xmlschema }}">
+        {{ french.date | date:format }}
+    </time></small>
+</li>
