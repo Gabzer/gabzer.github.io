@@ -90,7 +90,7 @@ collections:
     permalink:       /tag/:name/
     output:          true
   projects:
-    permalink:       /projects/:path/
+    permalink:       /projects/
     output:          true
 
 # -----------------------------------------------------------------------------

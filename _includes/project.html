@@ -1,6 +1,6 @@
 {% assign project = include.project %}
 
-<article id="post-{{ post.id | slice: 1,9999 }}" class="post{% if include.link_title %} mb6{% endif %}" role="article">
+<article id="project-{{ project.id | slice: 1,9999 }}" class="project{% if include.link_title %} mb6{% endif %}" role="article">
     <header>
         <h1 class="post-title">
             {% if include.link_title %}<a href="{{ project.url | relative_url }}" data-flip="title">{% endif %}
@@ -10,8 +10,8 @@
 
         <p class="post-date heading">
             <time datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%d %b %Y" }}</time>
-            {% include tag-list.html tags=project.categories meta=site.featured_categories start_with="in " separator=" / " %}
-            {% include tag-list.html tags=project.tags meta=site.featured_tags start_with="on " separator=", " %}
+            {% include tag-list_project.html tags=project.categories meta=site.featured_categories start_with="in " separator=" / " %}
+            {% include tag-list_project.html tags=project.tags meta=site.featured_tags start_with="on " separator=", " %}
         </p>
 
         {% include message.html text=project.description %}
