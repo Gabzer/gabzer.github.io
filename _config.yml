@@ -90,10 +90,10 @@ collections:
     permalink:       /tag/:name/
     output:          true
   projects:
-    permalink:       /projects/
+    permalink:       /projects/:name/
     output:          true
   french:
-    permalink:       /french/
+    permalink:       /french/:name/
     output:          true
 
 # -----------------------------------------------------------------------------

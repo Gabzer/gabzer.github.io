@@ -1,6 +1,6 @@
 {% assign post = include.post %}
 {% assign format = include.format | default:"%d %b %Y" %}
-
+{{ include.french }}
 <li class="h4">
   <a href="{{ post.url | relative_url }}" data-flip="title">
     <span>{{ post.title }}</span>

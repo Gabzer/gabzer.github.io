@@ -1,35 +1,92 @@
 ---
 layout: base
 ---
-
-{% assign category = site.featured_categories | where: "slug", page.slug | first %}
-{% if category %}
-  {% assign posts = site.categories[page.slug] %}
+{% assign type = page.order %}
+{% if type == 1 %}
+    {% assign category = site.featured_categories | where: "slug", page.slug | first %}
+    {% if category %}
+      {% assign posts = site.categories[page.slug] %}
+    {% else %}
+      {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+      {% if tag %}
+        {% assign posts = site.tags[page.slug] %}
+      {% else %}
+        {% assign posts = site.posts %}
+      {% endif %}
+    {% endif %}
 {% else %}
-  {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
-  {% if tag %}
-    {% assign posts = site.tags[page.slug] %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-{% endif %}
+    {% if type == 2 %}
+        {% assign category = site.featured_categories | where: "slug", page.slug | first %}
+        {% if category %}
+            {% assign projects = site.categories[page.slug] %}
+        {% else %}
+            {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+            {% if tag %}
+                {% assign projects = site.tags[page.slug] %}
+            {% else %}
+                {% assign projects = site.projects %}
+        {% endif %}
+    {% else %}
+        {% assign category = site.featured_categories | where: "slug", page.slug | first %}
+        {% if category %}
+            {% assign frenchs = site.categories[page.slug] %}
+        {% else %}
+            {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+            {% if tag %}
+                {% assign frenchs = site.tags[page.slug] %}
+            {% else %}
+                {% assign frenchs = site.french %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endif %}{% endif %}
 
 {% if page.title.size > 0 %}
   <header>
-    <h1 class="page-title">{{ page.title }}</h1>
+    <h1 class="page-title">{{ page.title }}AQUIoi</h1>
     {% include message.html text=page.description %}
+    {{ type }}
   </header>
   <hr class="sr-only"/>
 {% endif %}
 
-{% for post in posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate != date %}
-    {% unless forloop.first %}</ul>{% endunless %}
-    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
-    <ul class="related-posts">
-    {% assign date = currentdate %}
-  {% endif %}
-  {% include post-list-item.html post=post format="%d %b" %}
-  {% if forloop.last %}</ul>{% endif %}
-{% endfor %}
+{% if type == 1 %}
+    {% for post in posts %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+        <ul class="related-posts">
+        {% assign date = currentdate %}
+      {% endif %}
+      {% include post-list-item.html post=post format="%d %b" %}
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+{% else %}
+    {% if type == 2 %}
+        {% for project in projects %}
+            {% assign currentdate = project.date | date: "%Y" %}
+            {% if currentdate != date %}
+                {% unless forloop.first %}</ul>{% endunless %}
+                <h2 id="y{{project.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+                <ul class="related-posts">
+                {% assign date = currentdate %}
+            {% endif %}
+            {% include project-list-item.html project=project format="%d %b" %}
+            {% if forloop.last %}</ul>{% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if type == 3 %}
+        {% for french in frenchs %}
+            {% assign currentdate = fr.date | date: "%Y" %}
+            {% if currentdate != date %}
+                {% unless forloop.first %}</ul>{% endunless %}
+                <h2 id="y{{french.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+                <ul class="related-posts">
+                {% assign date = currentdate %}
+            {% endif %}
+            {% include french-list-item.html french=french format="%d %b" %}
+            {% if forloop.last %}</ul>{% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}
