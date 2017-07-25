@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+
 {% assign type = page.order %}
 {% if type == 1 %}
     {% assign category = site.featured_categories | where: "slug", page.slug | first %}
@@ -14,38 +15,40 @@ layout: base
         {% assign posts = site.posts %}
       {% endif %}
     {% endif %}
-{% else %}
-    {% if type == 2 %}
-        {% assign category = site.featured_categories | where: "slug", page.slug | first %}
-        {% if category %}
-            {% assign projects = site.categories[page.slug] %}
-        {% else %}
-            {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
-            {% if tag %}
-                {% assign projects = site.tags[page.slug] %}
-            {% else %}
-                {% assign projects = site.projects %}
-        {% endif %}
+{% endif %}
+
+{%if type == 2 %}
+    {% assign category = site.featured_categories | where: "slug", page.slug | first %}
+    {% if category %}
+        {% assign projects = site.categories[page.slug] %}
     {% else %}
-        {% assign category = site.featured_categories | where: "slug", page.slug | first %}
-        {% if category %}
-            {% assign frenchs = site.categories[page.slug] %}
+        {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+        {% if tag %}
+            {% assign projects = site.tags[page.slug] %}
         {% else %}
-            {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
-            {% if tag %}
-                {% assign frenchs = site.tags[page.slug] %}
-            {% else %}
-                {% assign frenchs = site.french %}
-            {% endif %}
+            {% assign projects = site.projects %}
+    {% endif %}
+{% endif %}
+
+{% if type == 3 %}
+    {% assign category = site.featured_categories | where: "slug", page.slug | first %}
+    {% if category %}
+        {% assign french = site.categories[page.slug] %}
+    {% else %}
+        {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+        {% if tag %}
+            {% assign french = site.tags[page.slug] %}
+        {% else %}
+            {% assign french = site.french %}
         {% endif %}
     {% endif %}
-{% endif %}{% endif %}
+{% endif %}
+{% endif %}
 
 {% if page.title.size > 0 %}
   <header>
-    <h1 class="page-title">{{ page.title }}AQUIoi</h1>
+    <h1 class="page-title">{{ page.title }}</h1>
     {% include message.html text=page.description %}
-    {{ type }}
   </header>
   <hr class="sr-only"/>
 {% endif %}
@@ -75,8 +78,9 @@ layout: base
             {% include project-list-item.html project=project format="%d %b" %}
             {% if forloop.last %}</ul>{% endif %}
         {% endfor %}
-    {% endif %}
+    {% else %}
     {% if type == 3 %}
+        {% assign frenchs = site.french %}
         {% for french in frenchs %}
             {% assign currentdate = fr.date | date: "%Y" %}
             {% if currentdate != date %}
@@ -89,4 +93,4 @@ layout: base
             {% if forloop.last %}</ul>{% endif %}
         {% endfor %}
     {% endif %}
-{% endif %}
+{% endif %}{% endif %}
