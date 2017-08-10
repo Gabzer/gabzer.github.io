@@ -10,3 +10,8 @@
                 \/__/                  \/___/
 ~~~
 
+run in  local:
+
+```text
+bundle exec jekyll serve
+```
